@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pedido.css">
+    <title>Black coffe: Haz tu pedido</title>
+</head>
+<body>
+    <script src="../js/app.js"></script>
+
+    <header>
+        <div class="logo__wrapper">
+            <a href="../index.html">
+                <p class="logo">Black</p>
+                <p class="logo--2">Coffe</p>
+            </a>
+        </div>
+
+        <input type="checkbox" class="toggler">
+        <nav class="navigation__wrapper">
+            <ul class="links__box">
+                <li><a class="link" href="../index.html">Inicio</a></li>
+                <li><a class="link order" href="pedido.html">Haz tu pedido</a></li>
+                <li><a class="link" href="menu.html">Menu</a></li>
+                <li><a class="link" href="location.html">Ubicación</a></li>
+                <li><a class="link cta__link" href="sign-in.html">Entrar</a></li>
+            </ul>
+        </nav>
+
+        <span class="hamburguer__menu"><span>
+    </header>
+
+    <section class="order__section">
+        <div class="opcions__box">
+            <h1 class="order__heading">Haz tu pedido aqui</h1>
+            <div class="btns__wrapper">
+                <a class="order__btn" href="#bebidas-calientes">Bebidas calientes</a>
+                <a class="order__btn" href="#bebidas-frias">Bebidas frias</a>
+                <a class="order__btn" href="#postres">Postres</a>
+            </div>
+            <div id="bebidas-calientes" class="padding-top">
+                <h2 class="order__heading--2">Bebidas Calientes</h2>
+            </div>
+            <div class="order-opcions__wrapper">
+                <div class="order__opcion calientes">
+                    <div class="order__content">
+                        <h2 class="order__price">$0.75</h2>
+                        <p class="order__name">Cafe <br> americano</p>
+                    </div>
+                    <a href="javascript:americano();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion calientes">
+                    <div class="order__content">
+                        <h2 class="order__price">$0.75</h2>
+                        <p class="order__name">Cafe <br> con leche</p>
+                    </div>
+                    <a href="javascript:cafe__leche();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion calientes">
+                    <div class="order__content">
+                        <h2 class="order__price">$0.50</h2>
+                        <p class="order__name">Cafe <br> black coffe</p>
+                    </div>
+                    <a href="javascript:cafe__black();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion calientes">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.25</h2>
+                        <p class="order__name">Caffè latte</p>
+                    </div>
+                    <a href="javascript:latte();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion calientes">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.00</h2>
+                        <p class="order__name">Ristretto</p>
+                    </div>
+                    <a href="javascript:ristretto();" class="order-opcion__btn">Agregar</a>
+                </div>
+                
+                <div class="order__opcion calientes">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.50</h2>
+                        <p class="order__name">Cappuccino</p>
+                    </div>
+                    <a href="javascript:capuchino();" class="order-opcion__btn">Agregar</a>
+                </div>
+            </div>
+
+            <!-- Aqui estan las bebidas frias -->
+            <div id="bebidas-frias" class="padding-top">
+                <h2 class="order__heading--2">Bebidas frias</h2>
+            </div>
+            <div class="order-opcions__wrapper">
+                <div class="order__opcion frias">
+                    <div class="order__content">
+                        <h2 class="order__price">$0.50</h2>
+                        <p class="order__name">Cafe <br> normal helado</p>
+                    </div>
+                    <a href="javascript:cafe__helado();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion frias">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.75</h2>
+                        <p class="order__name">Frappuchino <br> con leche</p>
+                    </div>
+                    <a href="javascript:frapuchino__leche();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion frias">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.25</h2>
+                        <p class="order__name">Te verde <br> con leche</p>
+                    </div>
+                    <a href="javascript:te__verde();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion frias">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.50</h2>
+                        <p class="order__name">Frappuchino</p>
+                    </div>
+                    <a href="javascript:frapuchino();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion frias">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.00</h2>
+                        <p class="order__name">Te de leche</p>
+                    </div>
+                    <a href="javascript:te__leche();" class="order-opcion__btn">Agregar</a>
+                </div>
+                
+                <div class="order__opcion frias">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.50</h2>
+                        <p class="order__name">Batido afrutado</p>
+                    </div>
+                    <a href="javascript:batido();" class="order-opcion__btn">Agregar</a>
+                </div>
+            </div>
+
+            <!-- Aqui estan los postres -->
+            <div id="postres" class="padding-top">
+                <h2 class="order__heading--2">Postres</h2>
+            </div>
+            <div class="order-opcions__wrapper">
+                <div class="order__opcion postres">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.50</h2>
+                        <p class="order__name">Helado <br> de chocolate</p>
+                    </div>
+                    <a href="javascript:helado();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion postres">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.75</h2>
+                        <p class="order__name">Pastel <br> de cafe</p>
+                    </div>
+                    <a href="javascript:pastel__cafe();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion postres">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.25</h2>
+                        <p class="order__name">Barras <br> de chocolate</p>
+                    </div>
+                    <a href="javascript:barras__chocolate();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion postres">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.00</h2>
+                        <p class="order__name">Brownies <br> de chocolate</p>
+                    </div>
+                    <a href="javascript:brownies();" class="order-opcion__btn">Agregar</a>
+                </div>
+        
+                <div class="order__opcion postres">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.75</h2>
+                        <p class="order__name">Pastel <br> de chocolate</p>
+                    </div>
+                    <a href="javascript:pastel__chocolate();" class="order-opcion__btn">Agregar</a>
+                </div>
+                
+                <div class="order__opcion postres">
+                    <div class="order__content">
+                        <h2 class="order__price">$1.60</h2>
+                        <p class="order__name">Tarta <br> tiramisú</p>
+                    </div>
+                    <a href="javascript:tarta();" class="order-opcion__btn">Agregar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="order__cart">
+            <div class="order-cart__content">
+                <h2 class="order-cart__heading">Carro de compra</h2>
+                <p class="order-cart__text">Total a pagar en dolares:</p>
+                <input type="text" value="0.00" id="output" step="0.01" disabled/>
+                <a href="javascript:reset();" class="order-cart__reset">Resetear</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="justify-content: space-evenly">
+        <div class="footer__box">
+            <div class="logo__wrapper">
+                <a href="../index.html">
+                    <p class="logo">Black</p>
+                    <p class="logo--2">Coffe</p>
+                </a>
+            </div>
+        </div>
+    
+        <div class="footer__box">
+            <div class="footer-content__wrapper">
+                <h3 class="footer__box-heading">Conócenos</h3>
+                <a href="contac-us.html" class="footer__box-link">Contáctanos</a>
+                <a href="events.html" class="footer__box-link">Eventos</a>
+                <a href="join-us.html" class="footer__box-link">Únete a nosotros</a>
+                <a href="sign-in.html" class="footer__box-link">Iniciar sesion</a>
+                <a href="privacy-policy.html" class="footer__box-link">Politica de privacidad</a>
+            </div>
+        </div>
+    
+        <div class="footer__box">
+            <div class="footer-content__wrapper">
+                <h3 class="footer__box-heading">Redes sociales</h3>
+                <a target="_blank" href="https://www.facebook.com/Black-Coffee-102593731933478/" class="footer__box-link">Facebook</a>
+                <a target="_blank" href="https://instagram.com/blackcoffee_chalchuapa?igshid=YmMyMTA2M2Y=" class="footer__box-link">Instagram</a>
+            </div>
+        </div>
+    
+        <div class="footer__box">
+            <div class="footer-content__wrapper">
+                <a target="_blank" href="https://www.facebook.com/Black-Coffee-102593731933478/" class="social__media-icon facebook"></a>
+                <a target="_blank" href="https://instagram.com/blackcoffee_chalchuapa?igshid=YmMyMTA2M2Y=" class="social__media-icon instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

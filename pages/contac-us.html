@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact-us.css">
+    <title>Black coffe: Contactanos</title>
+</head>
+<body>
+    <header>
+        <div class="logo__wrapper">
+            <a href="../index.html">
+                <p class="logo">Black</p>
+                <p class="logo--2">Coffe</p>
+            </a>
+        </div>
+
+        <input type="checkbox" class="toggler">
+        <nav class="navigation__wrapper">
+            <ul class="links__box">
+                <li><a class="link" href="../index.html">Inicio</a></li>
+                <li><a class="link order" href="pedido.html">Haz tu pedido</a></li>
+                <li><a class="link" href="menu.html">Menu</a></li>
+                <li><a class="link" href="location.html">Ubicación</a></li>
+                <li><a class="link cta__link" href="sign-in.html">Entrar</a></li>
+            </ul>
+        </nav>
+
+        <span class="hamburguer__menu"><span>
+    </header>
+
+    <section class="contact__wrapper">
+        <h2 class="contact__heading">Contáctanos</h2>
+        <div class="contact__box">
+            <div class="box-text__wrapper">
+                <p class="box-text margin--bottom">¿Tienes alguna sugerencia o un problema al cual necesites solucion?</p>
+                <p class="box-text">¡Dejanos un mensaje y nos comunicaremos en breve!</p>
+            </div>
+
+            <div class="form__wrapper">
+                <form>
+                    <div class="form-group">
+                      <label for="inputName" class="form-text">Nombre</label>
+                      <input type="name" class="form-input" id="InputName" required autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputEmail" class="form-text">Email</label>
+                      <input type="email" class="form-input" id="inputEmail" required autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputTel" class="form-text">Teléfono</label>
+                        <input type="tel" class="form-input" id="inputTel" placeholder="+503 Teléfono" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+                        maxlength="8" required autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputText" class="form-text">Mensaje</label>
+                        <textarea class="form-input not-pd" name="textarea" id="inputText" cols="30" rows="1" required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-btn">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="justify-content: space-evenly">
+        <div class="footer__box">
+            <div class="logo__wrapper">
+                <a href="../index.html">
+                    <p class="logo">Black</p>
+                    <p class="logo--2">Coffe</p>
+                </a>
+            </div>
+        </div>
+    
+        <div class="footer__box">
+            <div class="footer-content__wrapper">
+                <h3 class="footer__box-heading">Conócenos</h3>
+                <a href="contac-us.html" class="footer__box-link">Contáctanos</a>
+                <a href="events.html" class="footer__box-link">Eventos</a>
+                <a href="join-us.html" class="footer__box-link">Únete a nosotros</a>
+                <a href="sign-in.html" class="footer__box-link">Iniciar sesion</a>
+                <a href="privacy-policy.html" class="footer__box-link">Politica de privacidad</a>
+            </div>
+        </div>
+    
+        <div class="footer__box">
+            <div class="footer-content__wrapper">
+                <h3 class="footer__box-heading">Redes sociales</h3>
+                <a target="_blank" href="https://www.facebook.com/Black-Coffee-102593731933478/" class="footer__box-link">Facebook</a>
+                <a target="_blank" href="https://instagram.com/blackcoffee_chalchuapa?igshid=YmMyMTA2M2Y=" class="footer__box-link">Instagram</a>
+            </div>
+        </div>
+    
+        <div class="footer__box">
+            <div class="footer-content__wrapper">
+                <a target="_blank" href="https://www.facebook.com/Black-Coffee-102593731933478/" class="social__media-icon facebook"></a>
+                <a target="_blank" href="https://instagram.com/blackcoffee_chalchuapa?igshid=YmMyMTA2M2Y=" class="social__media-icon instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

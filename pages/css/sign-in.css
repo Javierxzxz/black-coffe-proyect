@@ -1,0 +1,198 @@
+/* Tabla de contenidos
+
+1- Ajustes globales
+2- Contenido principal de la pagina
+3- Hover (ajustes con hover)
+4-  Media screen settings */
+/*--------------------------------------------------------------------------*/
+
+
+
+
+/* 1- Ajustes globales */
+
+/* Variables*/
+:root {
+    --color-red: #f04523;
+    --color-bg: #e9e6df;
+    --color-dark: #000;
+    --color-light: #fff;
+    --color-pastel: #e4dfd5;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*Aqui se define cuanto es 1 rem (1rem = 10px)*/
+}
+
+/* Se remueven margenes y paddings por defecto*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*:link,
+*:visited {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(../../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-semibold;
+    src: url(../../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: great-vibes;
+    src: url(../../fonts/GreatVibes-Regular.ttf);
+}
+
+body {
+    font-family: "poppins-medium";
+    font-weight: 500;
+    color: var(--color-dark);
+    background-color: var(--color-bg);
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* 2- Contenido de la pagina */
+.wrapper {
+    display: flex;
+    height: 100vh;
+    background-color: var(--color-bg);
+}
+
+.account__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.logo__wrapper {
+    position: relative;
+    margin-bottom: 3.5rem;
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-family: "poppins-semibold";
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.658);
+    transition: all .2s ease-in;
+}
+
+.logo--2 {
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.658);
+    font-family:'great-vibes';
+    font-weight: bolder;
+    position: absolute;
+    top: 3.5rem;
+    right: -1rem;
+    transition: all .2s ease-in;
+}
+
+.form__wrapper {
+    max-width: 320px;
+    padding: 3rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    background-color: var(--color-light);
+    border: 1px solid var(--form-border-color);
+}
+
+.form__btn {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: var(--color-light);
+    padding: .8rem 1.4rem;
+    border-radius: .5rem;
+    background-color: var(--color-red);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+    border: 0;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.image__wrapper {
+    width: 100%;
+    background-image: url(../../images/coffee-cup.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* 3- Hover (ajustes con hover) */
+@media (hover: hover) {
+
+    /* 2- Contenido de la pagina */
+    .logo:hover {
+        color: var(--color-dark);
+    }
+
+    .logo:hover ~ .logo--2 {
+        color: var(--color-dark);
+    }
+
+    .form__btn:hover {
+        transform: translateY(-.1rem)
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* 4- Media-screen settings */
+@media screen and (max-width: 46.875em) {
+    .wrapper {
+        justify-content: center;
+    }
+
+    .image__wrapper {
+        width: 0%;
+    }
+}
+
+@media (orientation: portrait) {
+    .wrapper {
+        justify-content: center;
+    }
+
+    .image__wrapper {
+        width: 0%;
+    }
+}
