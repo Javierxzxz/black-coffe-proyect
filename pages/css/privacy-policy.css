@@ -258,6 +258,10 @@ footer {
     .logo:hover ~ .logo--2 {
         color: var(--color-dark);
     }
+    
+    .toggler:hover ~ .hamburguer__menu {
+        opacity: .5;
+    }
 
     .link:hover {
         color: var(--color-dark);
@@ -296,10 +300,6 @@ footer {
         background-color: var(--color-red);
         border-radius: 1rem;
         transition: opacity .3s ease;
-    }
-
-    .toggler:hover ~ .hamburguer__menu {
-        opacity: .5;
     }
 
     .hamburguer__menu::before,
