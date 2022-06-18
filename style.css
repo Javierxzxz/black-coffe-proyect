@@ -87,7 +87,6 @@ header {
     align-items: center;
     padding: 4rem 0;
     background-color: var(--color-bg: #e9e6df);
-    position: sticky;
 }
 
 .logo__wrapper {
