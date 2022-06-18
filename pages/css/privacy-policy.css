@@ -291,6 +291,7 @@ footer {
         z-index: 1;
         cursor: pointer;
         transition: none;
+        appearance: none;
     }
 
     .hamburguer__menu {
